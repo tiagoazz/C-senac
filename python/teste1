@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace dois_numeros_inseridos_pelo_usuario
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Digite o primeiro número: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Digite o segundo número: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Digite o terceiro numero: ");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Digite o quarto numero:");
+            int num4 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($" O primeiro numero digitado é :{num1}");
+
+            Console.WriteLine($" O segundo número digitado é :{num2}");
+
+            Console.WriteLine($" O terceiro numero digitado é :{num3}");
+
+            Console.WriteLine($" O  quarto numero digitado é :{num4}");
+            int soma = Convert.ToInt32(num1 + num2 + num3 + num4);
+
+            Console.WriteLine($" A Soma de {num1} + {num2} + {num3} + {num4} = {soma}");
+            
+          Console.WriteLine(" A media dos numeros digitados é " + soma /4);
+                
+
+            Console.ReadKey();
+
+        }
+    }
+}
